@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "547128733970",
+    "project_id": "chat-app-c25df",
+    "storage_bucket": "chat-app-c25df.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:547128733970:android:40d819dcb8ce3f878a83cb",
+        "android_client_info": {
+          "package_name": "com.boxaffects.chat_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "547128733970-jp12vndqv190itir69t4akk7cqdpapuq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.boxaffects.chat_app",
+            "certificate_hash": "38ef5f075d6d65833e4d7fd0d89d972988682ebb"
+          }
+        },
+        {
+          "client_id": "547128733970-upu66q2plgd8lso60im473b2ni49v7cp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4zB0oy_C6oksRsnHny2_5oDsC1pemBFM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "547128733970-upu66q2plgd8lso60im473b2ni49v7cp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

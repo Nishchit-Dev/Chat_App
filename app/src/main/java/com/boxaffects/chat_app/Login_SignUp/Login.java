@@ -30,9 +30,9 @@ public class Login extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_signup);
         Button send = findViewById(R.id.send_Otp);
-        Phone = findViewById(R.id.edPhone);
+        Phone = findViewById(R.id.EmailOrPhone);
 
         send.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -69,7 +69,6 @@ public class Login extends AppCompatActivity {
                         FirebaseDatabase database = FirebaseDatabase.getInstance();
                         DatabaseReference dbref = database.getReference("UsersID");
 
-
                         dbref.addListenerForSingleValueEvent(new ValueEventListener() {
                             @Override
                             public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -80,7 +79,6 @@ public class Login extends AppCompatActivity {
                                     dbref.child(phn).setValue(key);
                                 }
                             }
-
                             @Override
                             public void onCancelled(@NonNull DatabaseError error) {
 

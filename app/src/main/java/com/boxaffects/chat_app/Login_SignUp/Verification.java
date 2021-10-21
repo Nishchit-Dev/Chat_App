@@ -31,7 +31,13 @@ public class Verification extends AppCompatActivity {
         setContentView(R.layout.activity_verification);
         Otp = findViewById(R.id.phnno);
         verify = findViewById(R.id.verify);
-
+        verify.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View view) {
+                Otp.setVisibility(View.VISIBLE);
+                return false;
+            }
+        });
         verify.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -54,7 +60,7 @@ public class Verification extends AppCompatActivity {
                             FirebaseDatabase database = FirebaseDatabase.getInstance();
                             DatabaseReference dbref = database.getReference();
                             Toast.makeText(getApplicationContext(),"verified Successfully",Toast.LENGTH_SHORT).show();
-                            Intent i = new Intent(getApplicationContext(), UserData.class);
+                            Intent i = new Intent(getApplicationContext(), Profile.class);
                             i.putExtra("phone",phn);
                             startActivity(i);
                         }else{

@@ -11,9 +11,10 @@
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="330dp"
         android:layout_height="50dp"
-        android:layout_marginTop="376dp"
+        android:layout_marginTop="420dp"
         android:background="@drawable/signin_back"
-        android:fontFamily="@font/nexabold"
+        android:fontFamily="@font/nexaextrabold"
+        android:onClick="Login"
         android:shadowColor="#00FFFFFF"
         android:text="Log In"
         android:textAllCaps="false"
@@ -22,21 +23,20 @@
         android:textStyle="bold"
         app:backgroundTint="#f2f2f2"
         app:cornerRadius="12dp"
-        app:layout_constraintBottom_toTopOf="@+id/SignUp_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/SignUp_btn"
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="330dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="240dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/signin_back"
-        android:fontFamily="@font/nexabold"
+        android:fontFamily="@font/nexaextrabold"
+        android:onClick="signup"
         android:shadowColor="#00FFFFFF"
         android:text="Sign Up"
         android:textAllCaps="false"
@@ -45,9 +45,9 @@
         android:textStyle="bold"
         app:backgroundTint="#f2f2f2"
         app:cornerRadius="12dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Login_btn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

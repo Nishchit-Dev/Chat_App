@@ -12,8 +12,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Chat_App">
-        <activity android:name=".Login_SignUp.Profile"></activity>
-        <activity android:name=".Login_SignUp.Log_In"></activity>
+        <activity android:name=".settings.Settings"></activity>
+        <activity android:name=".friend_request.Friends_Req" />
+        <activity android:name=".Chats.User_Chats" />
+        <activity android:name=".Login_SignUp.Profile" />
+        <activity android:name=".Login_SignUp.Log_In" />
         <activity android:name=".MainActivity.Chats" />
         <activity android:name=".UserDetails.UserData" />
         <activity android:name=".Login_SignUp.Verification" />

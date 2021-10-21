@@ -35,44 +35,44 @@
         android:id="@+id/Username_Tb"
         android:layout_width="330dp"
         android:layout_height="50dp"
+        android:layout_marginTop="296dp"
         android:background="@drawable/signin_back"
         android:ems="10"
         android:fontFamily="@font/nexalight"
+
         android:hint="Username"
         android:inputType="textPersonName"
-
         android:padding="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/Password_Tb"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.951" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/Password_Tb"
         android:layout_width="330dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/signin_back"
         android:ems="10"
         android:fontFamily="@font/nexalight"
         android:hint="Password"
         android:inputType="textPersonName"
         android:padding="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/materialButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Username_Tb" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/materialButton"
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="330dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="12dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/signin_back"
-        android:fontFamily="@font/nexabold"
+        android:fontFamily="@font/nexaextrabold"
+        android:onClick="load_chats"
         android:shadowColor="#00FFFFFF"
         android:text="Login"
         android:textAllCaps="false"
@@ -81,32 +81,34 @@
         android:textStyle="bold"
         app:backgroundTint="#f2f2f2"
         app:cornerRadius="12dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Password_Tb" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/nexalight"
         android:text="Don't Have account?"
         android:textColor="#000000"
-        app:layout_constraintBottom_toTopOf="@+id/textView5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialButton" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
         android:fontFamily="@font/nexalight"
         android:text="Create account"
         android:textColor="#2BB3FF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="518dp" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

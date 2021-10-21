@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        app:cardElevation="0dp"
+        app:cardMaxElevation="0dp"
+        tools:layout_editor_absoluteX="3dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/chats_back">
+
+            <ImageView
+                android:id="@+id/userProfile_sugg"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/avatar09" />
+
+            <TextView
+                android:id="@+id/mutual_users_sugg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nexalight"
+                android:text="TextView"
+                android:textSize="12dp"
+                app:layout_constraintLeft_toLeftOf="@id/username_sugg"
+                app:layout_constraintTop_toBottomOf="@id/username_sugg" />
+
+            <TextView
+                android:id="@+id/username_sugg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/nexaextrabold"
+                android:text="TextView"
+                app:layout_constraintLeft_toRightOf="@+id/userProfile_sugg"
+                app:layout_constraintTop_toTopOf="@id/userProfile_sugg" />
+
+            <ImageView
+                android:id="@+id/accept_sugg"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/decilne_sugg"
+                app:layout_constraintEnd_toStartOf="@+id/decilne_sugg"
+                app:layout_constraintTop_toTopOf="@+id/decilne_sugg"
+                app:srcCompat="@drawable/add" />
+
+            <ImageView
+                android:id="@+id/decilne_sugg"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/close_small" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
